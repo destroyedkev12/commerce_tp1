@@ -1,0 +1,2 @@
+class Enfant < ApplicationRecord
+end

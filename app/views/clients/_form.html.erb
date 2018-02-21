@@ -1,0 +1,62 @@
+<%= form_with(model: client, local: true) do |form| %>
+  <% if client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% client.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.number_field :id, id: :client_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Prenom %>
+    <%= form.text_field :Prenom, id: :client_Prenom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Nom %>
+    <%= form.text_field :Nom, id: :client_Nom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DateNaissance %>
+    <%= form.date_select :DateNaissance, id: :client_DateNaissance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :NAS %>
+    <%= form.text_field :NAS, id: :client_NAS %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adresses_id %>
+    <%= form.number_field :adresses_id, id: :client_adresses_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :NombreEnfants %>
+    <%= form.number_field :NombreEnfants, id: :client_NombreEnfants %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CompteTaxesProprietaire %>
+    <%= form.text_field :CompteTaxesProprietaire, id: :client_CompteTaxesProprietaire %>
+  </div>
+
+  <div class="field">
+    <%= form.label :integer %>
+    <%= form.text_field :integer, id: :client_integer %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

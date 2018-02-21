@@ -1,0 +1,2 @@
+class EtatsCivil < ApplicationRecord
+end

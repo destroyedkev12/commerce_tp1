@@ -1,0 +1,2 @@
+class ClientsHasConjoint < ApplicationRecord
+end

@@ -1,0 +1,7 @@
+table_name = "versions"
+output = [ "rails g scaffold #{table_name} --skip-migration" ]
+ignore_columns = [ 'id', 'created_at', 'updated_at', ]
+table_name.constantize.columns.each do |c|
+  output << "#{c.name}:#{c.type}" unless ignore_columns.include?(c.name)
+end
+puts output.join(" ")

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Adresses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Numerocivique</th>
+      <th>Rue</th>
+      <th>Codepostal</th>
+      <th>Ville</th>
+      <th>Procince</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @adresses.each do |adress| %>
+      <tr>
+        <td><%= adress.id %></td>
+        <td><%= adress.NumeroCivique %></td>
+        <td><%= adress.Rue %></td>
+        <td><%= adress.CodePostal %></td>
+        <td><%= adress.Ville %></td>
+        <td><%= adress.Procince %></td>
+        <td><%= link_to 'Show', adress %></td>
+        <td><%= link_to 'Edit', edit_adress_path(adress) %></td>
+        <td><%= link_to 'Destroy', adress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Adress', new_adress_path %>
