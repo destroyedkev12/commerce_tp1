@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  Prenom: MyString
+  Nom: MyString
+  DateNaissance: 2018-02-19
+  NAS: 
+  adresses_id: 1
+  NombreEnfants: 1
+  CompteTaxesProprietaire: MyString
+  integer: MyString
+
+two:
+  id: 1
+  Prenom: MyString
+  Nom: MyString
+  DateNaissance: 2018-02-19
+  NAS: 
+  adresses_id: 1
+  NombreEnfants: 1
+  CompteTaxesProprietaire: MyString
+  integer: MyString

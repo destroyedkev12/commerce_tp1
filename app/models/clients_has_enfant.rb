@@ -1,0 +1,2 @@
+class ClientsHasEnfant < ApplicationRecord
+end

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Clients:</strong>
+  <%= @clients_etats_civil.Clients_id %>
+</p>
+
+<p>
+  <strong>Etatscivil:</strong>
+  <%= @clients_etats_civil.EtatsCivil_id %>
+</p>
+
+<p>
+  <strong>Datedebut:</strong>
+  <%= @clients_etats_civil.DateDebut %>
+</p>
+
+<p>
+  <strong>Datefin:</strong>
+  <%= @clients_etats_civil.DateFin %>
+</p>
+
+<%= link_to 'Edit', edit_clients_etats_civil_path(@clients_etats_civil) %> |
+<%= link_to 'Back', clients_etats_civils_path %>

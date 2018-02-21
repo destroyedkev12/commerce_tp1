@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Enfants_id: 1
+  Clients_id: 1
+  Lien: 1
+
+two:
+  Enfants_id: 1
+  Clients_id: 1
+  Lien: 1

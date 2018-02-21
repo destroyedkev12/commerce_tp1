@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Enfants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Prenom</th>
+      <th>Nom</th>
+      <th>Datenaissance</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enfants.each do |enfant| %>
+      <tr>
+        <td><%= enfant.id %></td>
+        <td><%= enfant.Prenom %></td>
+        <td><%= enfant.Nom %></td>
+        <td><%= enfant.DateNaissance %></td>
+        <td><%= link_to 'Show', enfant %></td>
+        <td><%= link_to 'Edit', edit_enfant_path(enfant) %></td>
+        <td><%= link_to 'Destroy', enfant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enfant', new_enfant_path %>

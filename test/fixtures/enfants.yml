@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  Prenom: MyString
+  Nom: MyString
+  DateNaissance: 2018-02-19
+
+two:
+  id: 1
+  Prenom: MyString
+  Nom: MyString
+  DateNaissance: 2018-02-19

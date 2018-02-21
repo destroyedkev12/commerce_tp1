@@ -1,0 +1,22 @@
+<%= form_with(model: etats_civil, local: true) do |form| %>
+  <% if etats_civil.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(etats_civil.errors.count, "error") %> prohibited this etats_civil from being saved:</h2>
+
+      <ul>
+      <% etats_civil.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.number_field :id, id: :etats_civil_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

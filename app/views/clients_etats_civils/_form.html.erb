@@ -1,0 +1,37 @@
+<%= form_with(model: clients_etats_civil, local: true) do |form| %>
+  <% if clients_etats_civil.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(clients_etats_civil.errors.count, "error") %> prohibited this clients_etats_civil from being saved:</h2>
+
+      <ul>
+      <% clients_etats_civil.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Clients_id %>
+    <%= form.number_field :Clients_id, id: :clients_etats_civil_Clients_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :EtatsCivil_id %>
+    <%= form.number_field :EtatsCivil_id, id: :clients_etats_civil_EtatsCivil_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DateDebut %>
+    <%= form.date_select :DateDebut, id: :clients_etats_civil_DateDebut %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DateFin %>
+    <%= form.date_select :DateFin, id: :clients_etats_civil_DateFin %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

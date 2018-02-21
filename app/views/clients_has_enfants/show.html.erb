@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Enfants:</strong>
+  <%= @clients_has_enfant.Enfants_id %>
+</p>
+
+<p>
+  <strong>Clients:</strong>
+  <%= @clients_has_enfant.Clients_id %>
+</p>
+
+<p>
+  <strong>Lien:</strong>
+  <%= @clients_has_enfant.Lien %>
+</p>
+
+<%= link_to 'Edit', edit_clients_has_enfant_path(@clients_has_enfant) %> |
+<%= link_to 'Back', clients_has_enfants_path %>

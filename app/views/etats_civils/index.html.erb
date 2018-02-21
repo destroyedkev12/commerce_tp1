@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Etats Civils</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @etats_civils.each do |etats_civil| %>
+      <tr>
+        <td><%= etats_civil.id %></td>
+        <td><%= link_to 'Show', etats_civil %></td>
+        <td><%= link_to 'Edit', edit_etats_civil_path(etats_civil) %></td>
+        <td><%= link_to 'Destroy', etats_civil, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Etats Civil', new_etats_civil_path %>

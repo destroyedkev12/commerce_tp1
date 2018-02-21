@@ -1,0 +1,2 @@
+class ClientsEtatsCivil < ApplicationRecord
+end
